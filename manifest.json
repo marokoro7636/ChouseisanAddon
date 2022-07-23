@@ -1,0 +1,15 @@
+{
+    "name": "調整さんアドオン",
+    "description": "調整さんでイベント作成時に時刻を指定する",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+          "js": ["lib/jquery-3.6.0.min.js", "content/content.js"],
+          "matches": ["https://chouseisan.com/"]
+        }
+    ]
+}
